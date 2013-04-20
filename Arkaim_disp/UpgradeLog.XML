@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Arkaim">
+</Property><Property Name="Файл решения" Value="C:\Users\Глеб\Desktop\sql\Buh\Arkaim.sln">
+</Property><Property Name="Файл параметров пользователя" Value="C:\Users\Глеб\Desktop\sql\Buh\Arkaim.suo">
+</Property><Property Name="Date" Value="30 марта 2012 г.">
+</Property><Property Name="Time" Value="21:35">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Arkaim.sln" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Arkaim.suo" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim.suo">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Arkaim.csproj" Description="Успешно создана резервная копия файла проекта: C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\Arkaim.csproj">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Arkaim.csproj.user" Description="Резервная копия проекта успешно создана как C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\Arkaim.csproj.user">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\AboutBox1.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\AboutBox1.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\AboutBox1.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\AboutBox1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\DBConnector.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\DBConnector.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormBilety.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormBilety.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormBilety.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormBilety.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormReports.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormReports.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormReports.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormReports.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormOptions.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormOptions.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormOptions.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormOptions.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormMain.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormMain.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormEkskursovody.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormEkskursovody.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormEkskursovody.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormEkskursovody.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormBilety2.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormBilety2.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormBilety2.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormBilety2.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Properties\AssemblyInfo.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Properties\Resources.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormEkskursii.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormEkskursii.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormEkskursii.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormEkskursii.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormZhurnal.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormZhurnal.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormZhurnal.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormZhurnal.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormZakazczik.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormZakazczik.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormZakazczik.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormZakazczik.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormRasselenie.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormRasselenie.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormRasselenie.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormRasselenie.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormZhitie.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormZhitie.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormZhitie.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormZhitie.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormReportsRasselenie.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormReportsRasselenie.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormReportsRasselenie.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormReportsRasselenie.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormKvit.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormKvit.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormKvit.Designer.cs" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormKvit.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\APP1.ico" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\APP1.ico">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\App_32.ico" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\App_32.ico">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\New.bmp" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\New.bmp">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Open.bmp" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\Open.bmp">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Preview.bmp" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\Preview.bmp">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Print.bmp" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\Print.bmp">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Save.bmp" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\Save.bmp">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\App.ico" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\App.ico">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\AboutBox1.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\AboutBox1.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormBilety.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormBilety.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormReports.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormReports.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormOptions.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormOptions.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormMain.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormMain.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormEkskursovody.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormEkskursovody.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormBilety2.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormBilety2.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Properties\Resources.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormEkskursii.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormEkskursii.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormZhurnal.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormZhurnal.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormZakazczik.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormZakazczik.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormRasselenie.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormRasselenie.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormZhitie.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormZhitie.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormReportsRasselenie.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormReportsRasselenie.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\FormKvit.resx" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\FormKvit.resx">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Properties\app.manifest" Description="Успешно создана резервная копия файла C:\Users\Глеб\Desktop\sql\Buh\Backup\Arkaim\Properties\app.manifest">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Arkaim.csproj" Description="Проект успешно преобразован">
+</Event><Event ErrorLevel="3" Project="Arkaim" Source="Arkaim\Arkaim.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Arkaim.sln" Description="Преобразование решения успешно завершено">
+</Event><Event ErrorLevel="3" Project="" Source="Arkaim.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Arkaim" Source="Arkaim\Arkaim.csproj" Description="Сканирование завершено: обновление для файлов проекта не требуется.">
+</Event></UpgradeLog>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Options>
+  <Item Name="Server">localhost</Item>
+  <Item Name="DBName">mysql</Item>
+  <Item Name="Login">root</Item>
+  <Item Name="Password">dura</Item>
+</Options>

@@ -1,0 +1,59 @@
+D:\5555\Buh\Buh\obj\Debug\Buh.csproj.ResolveComReference.cache
+D:\5555\Buh\Buh\bin\Debug\Buh.exe
+D:\5555\Buh\Buh\bin\Debug\Buh.pdb
+D:\5555\Buh\Buh\bin\Debug\MySql.Data.dll
+D:\5555\Buh\Buh\bin\Debug\UserControl.dll
+D:\5555\Buh\Buh\obj\Debug\ResolveAssemblyReference.cache
+D:\5555\Buh\Buh\obj\Debug\Buh.AboutBox1.resources
+D:\5555\Buh\Buh\obj\Debug\Buh.FormOptions.resources
+D:\5555\Buh\Buh\obj\Debug\Buh.FormMain.resources
+D:\5555\Buh\Buh\obj\Debug\Buh.Properties.Resources.resources
+D:\5555\Buh\Buh\obj\Debug\Buh.csproj.GenerateResource.Cache
+D:\5555\Buh\Buh\obj\Debug\Buh.exe
+D:\5555\Buh\Buh\obj\Debug\Buh.pdb
+D:\5555\Buh\Buh\obj\Debug\Buh.FormAccounts.resources
+D:\5555\Buh\Buh\obj\Debug\Buh.FormPaymentNames.resources
+D:\5555\Buh\Buh\obj\Debug\Buh.FormEduYear.resources
+D:\5555\Buh\Buh\obj\Debug\Buh.FormHostel.resources
+D:\5555\Buh\Buh\obj\Debug\Buh.FormJournal.resources
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.csproj.ResolveComReference.cache
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.exe
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.pdb
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\bin\Debug\Buh.exe
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\bin\Debug\Buh.pdb
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\bin\Debug\MySql.Data.dll
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\bin\Debug\UserControl.dll
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\ResolveAssemblyReference.cache
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.AboutBox1.resources
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.FormPaymentNames.resources
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.FormJournal.resources
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.FormOptions.resources
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.FormMain.resources
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.FormEduYear.resources
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.FormAccounts.resources
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.FormHostel.resources
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.Properties.Resources.resources
+E:\proGGGGGram\programming\restore\2009.09.29 - release\2009.09.29 - release\Buh\Buh\obj\Debug\Buh.csproj.GenerateResource.Cache
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.csproj.ResolveComReference.cache
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.exe
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.pdb
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.AboutBox1.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormOptions.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormMain.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.Properties.Resources.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.csproj.GenerateResource.Cache
+C:\Users\Глеб\Desktop\sql\Buh\Buh\bin\Debug\Buh.exe
+C:\Users\Глеб\Desktop\sql\Buh\Buh\bin\Debug\Buh.pdb
+C:\Users\Глеб\Desktop\sql\Buh\Buh\bin\Debug\MySql.Data.dll
+C:\Users\Глеб\Desktop\sql\Buh\Buh\bin\Debug\UserControl.dll
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormEkskursii.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormZhurnal.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormEkskursovody.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormReports.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormZakazczik.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormBilety.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormRasselenie.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormZhitie.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormReportsRasselenie.resources
+C:\Users\Глеб\Desktop\sql\Buh\Buh\obj\Debug\Buh.FormBilety2.resources

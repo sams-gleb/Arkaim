@@ -230,14 +230,13 @@ namespace Ark
             listViewRasselenie.Columns.Add("Кол-во дней", -2, HorizontalAlignment.Left);
             listViewRasselenie.Columns.Add("Кол-во человек", -2, HorizontalAlignment.Left);
             listViewRasselenie.Columns.Add("Житие", -2, HorizontalAlignment.Left);
-            listViewRasselenie.Columns.Add("Житие (безнал)", -2, HorizontalAlignment.Left);
             listViewRasselenie.Columns.Add("Парковка", -2, HorizontalAlignment.Left);
             listViewRasselenie.Columns.Add("Бронь", -2, HorizontalAlignment.Left);
-            listViewRasselenie.Columns.Add("Бронь (безнал)", -2, HorizontalAlignment.Left);
+            listViewRasselenie.Columns.Add("Безнал", -2, HorizontalAlignment.Left);
             listViewRasselenie.Columns.Add("Заказчик", -2, HorizontalAlignment.Left);
             listViewRasselenie.Columns.Add("Сумма", -2, HorizontalAlignment.Left);
             
-            listViewRasselenie.Columns[0].Width = 25;
+            listViewRasselenie.Columns[0].Width = 35;
             listViewRasselenie.Columns[1].Width = 100;
             listViewRasselenie.Columns[2].Width = 100;
             listViewRasselenie.Columns[3].Width = 150;
@@ -245,12 +244,11 @@ namespace Ark
             listViewRasselenie.Columns[5].Width = 80;
             listViewRasselenie.Columns[6].Width = 80;
             listViewRasselenie.Columns[7].Width = 150;
-            listViewRasselenie.Columns[8].Width = 150;
-            listViewRasselenie.Columns[9].Width = 70;
+            listViewRasselenie.Columns[8].Width = 70;
+            listViewRasselenie.Columns[9].Width = 100;
             listViewRasselenie.Columns[10].Width = 100;
-            listViewRasselenie.Columns[11].Width = 100;
-            listViewRasselenie.Columns[12].Width = 150;
-            listViewRasselenie.Columns[13].Width = 100;
+            listViewRasselenie.Columns[11].Width = 150;
+            listViewRasselenie.Columns[12].Width = 100;
 
         }
 
@@ -276,6 +274,8 @@ namespace Ark
             comboBoxCity.Enabled = false;
             comboBoxZakazczik.Enabled = false;
             textBoxBron.Enabled = false;
+            textBoxBez.Enabled = false;
+
             comboBoxZhitie2.Visible = false;
             DateTime pickedDate = new DateTime(dateTimePicker2.Value.Year, dateTimePicker2.Value.Month, 1);
             dateTimePicker2.Value = pickedDate;
@@ -307,6 +307,8 @@ namespace Ark
             textBoxPark.Enabled = true;
             textBoxNkvit.Text = "";
             textBoxNkvit.Enabled = true;
+            textBoxBez.Text = "";
+            textBoxBez.Enabled = true;
             comboBoxCity.SelectedIndex = -1;
             comboBoxCity.Enabled = true;
             comboBoxZakazczik.Enabled = true;
@@ -328,9 +330,9 @@ namespace Ark
                     //чекбоксы для выбора вставки в наличность, либо безналичность
                     string bron = textBoxBron.Text.Trim();
                     string zhitie = comboBoxZhitie.Text.Trim();
-                    string bron_bez = "";
+                    string bron_bez = textBoxBez.Text.Trim();
                     string zhitie_bez = "";
-                    if (checkBoxBron.Checked & ! checkBoxZhitie.Checked)
+                    /*if (checkBoxBron.Checked & ! checkBoxZhitie.Checked)
                     {
                         bron = "";
                         bron_bez = textBoxBron.Text.Trim();
@@ -347,7 +349,7 @@ namespace Ark
                         bron = "";
                         bron_bez = textBoxBron.Text.Trim();
                         zhitie_bez = comboBoxZhitie.Text.Trim();
-                    }
+                    }*/
                     string sql = String.Format("INSERT INTO `rasselenie` (`date`, `N_kvit`, `FiO`, `City`, `Kol_dney`, `Kol_czel`, `zhitie`, `parkovka`, `zakazczik`, `bron`, `zhitie_bez`, `bron_bez`) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}')", DateTime.Parse(dateTimePicker1.Text).Year + "-" + DateTime.Parse(dateTimePicker1.Text).Month + "-" + DateTime.Parse(dateTimePicker1.Text).Day, textBoxNkvit.Text, textBoxName.Text, comboBoxCity.Text, textBoxKolDays.Text, textBoxKolCzel.Text, zhitie, textBoxPark.Text, comboBoxZakazczik.Text, bron, zhitie_bez, bron_bez );
                   
 
@@ -377,9 +379,9 @@ namespace Ark
                     //чекбоксы для выбора вставки в наличность, либо безналичность
                     string bron = textBoxBron.Text.Trim();
                     string zhitie = comboBoxZhitie.Text.Trim();
-                    string bron_bez = "";
+                    string bron_bez = textBoxBez.Text.Trim();
                     string zhitie_bez = "";
-                    if (checkBoxBron.Checked & !checkBoxZhitie.Checked)
+                    /*if (checkBoxBron.Checked & !checkBoxZhitie.Checked)
                     {
                         bron = "";
                         bron_bez = textBoxBron.Text.Trim();
@@ -396,7 +398,7 @@ namespace Ark
                         bron = "";
                         bron_bez = textBoxBron.Text.Trim();
                         zhitie_bez = comboBoxZhitie.Text.Trim();
-                    }
+                    }*/
                     string sql = String.Format("UPDATE `rasselenie` SET `date` = '{0}', `N_kvit` = '{1}', `FiO` = '{2}', `City` = '{3}', `Kol_dney` = '{4}', `Kol_czel` = '{5}', `zhitie` = '{6}', `parkovka` = '{7}', `zakazczik`= '{8}', `bron`='{9}', `zhitie_bez`='{10}', `bron_bez`='{11}' WHERE `id`='{12}'", DateTime.Parse(dateTimePicker1.Text).Year + "-" + DateTime.Parse(dateTimePicker1.Text).Month + "-" + DateTime.Parse(dateTimePicker1.Text).Day, textBoxNkvit.Text, textBoxName.Text, comboBoxCity.Text, textBoxKolDays.Text, textBoxKolCzel.Text, zhitie, textBoxPark.Text, comboBoxZakazczik.Text, bron, zhitie_bez, bron_bez, m_rasselenie.id);
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
                     cmd.ExecuteNonQuery();
@@ -423,6 +425,7 @@ namespace Ark
             comboBoxCity.Enabled = false;
             comboBoxZakazczik.Enabled = false;
             textBoxBron.Enabled = false;
+            textBoxBez.Enabled = false;
 
             buttonDelete.Enabled = false;
             buttonApply.Enabled = false;
@@ -461,7 +464,7 @@ namespace Ark
             comboBoxCity.Enabled = true;
             comboBoxZakazczik.Enabled = true;
             textBoxBron.Enabled = true;
-
+            textBoxBez.Enabled = true;
 
             bNew = false;
 
@@ -482,12 +485,13 @@ namespace Ark
                     textBoxNkvit.Text = m_rasselenie.N_kvit;
                     comboBoxCity.Text = m_rasselenie.City;
                     comboBoxZakazczik.Text = m_rasselenie.zakazczik;
-                    if (m_rasselenie.zhitie_bez == "")
-                        comboBoxZhitie.Text = m_rasselenie.zhitie;
-                    else comboBoxZhitie.Text = m_rasselenie.zhitie_bez;
-                    if (m_rasselenie.bron_bez == "")
-                        textBoxBron.Text = m_rasselenie.bron;
-                    else textBoxBron.Text = m_rasselenie.bron_bez;
+                    //if (m_rasselenie.zhitie_bez == "")
+                    comboBoxZhitie.Text = m_rasselenie.zhitie;
+                    //else comboBoxZhitie.Text = m_rasselenie.zhitie_bez;
+                    //if (m_rasselenie.bron_bez == "")
+                    textBoxBron.Text = m_rasselenie.bron;
+                    //else textBoxBron.Text = m_rasselenie.bron_bez;
+                    textBoxBez.Text = m_rasselenie.bron_bez;
                     dateTimePicker1.Value = DateTime.Parse(m_rasselenie.date);
 
                     _Zhitie c;
@@ -530,7 +534,10 @@ namespace Ark
                 mainWin.m_dbConnector.Lock();
                 MySqlConnection conn = mainWin.m_dbConnector.getMySqlConnection();
 
-                string sql = String.Format("select `rasselenie`.`id` AS `id`,cast(`rasselenie`.`date` as char charset utf8) AS `date`,`rasselenie`.`N_kvit` AS `N_kvit`,`rasselenie`.`FiO` AS `FIO`,`rasselenie`.`City` AS `City`,`rasselenie`.`Kol_dney` AS `Kol_dney`,`rasselenie`.`Kol_czel` AS `Kol_czel`,`rasselenie`.`zhitie` AS `zhitie`,'' AS `zhitie_bez`,`rasselenie`.`parkovka` AS `parkovka`,`rasselenie`.`zakazczik` AS `Zakazczik`,`rasselenie`.`bron` AS `bron`,'' AS `bron_bez`,((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `date` >= '{0}' and `date` <= '{1}' union all select `rasselenie`.`id` AS `id`,cast(`rasselenie`.`date` as char charset utf8) AS `date`,`rasselenie`.`N_kvit` AS `N_kvit`,`rasselenie`.`FiO` AS `FIO`,`rasselenie`.`City` AS `City`,`rasselenie`.`Kol_dney` AS `Kol_dney`,`rasselenie`.`Kol_czel` AS `Kol_czel`,'' AS `zhitie`,`rasselenie`.`zhitie_bez` AS `zhitie_bez`,'' AS `parkovka`,`rasselenie`.`zakazczik` AS `Zakazczik`,'' AS `bron`,`rasselenie`.`bron_bez` AS `bron_bez`,(((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + ifnull(`rasselenie`.`bron_bez`,0)) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie_bez` = `zhitie`.`nazvanie`))) WHERE `date` >= '{0}' and `date` <= '{1}' union all select `rasselenie`.`id` AS `id`, '{1}' AS `date`,'' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `zhitie_bez`,'' AS `parkovka`,'Итого наличность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum(((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`)) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `date` >= '{0}' and `date` <= '{1}' union all select `rasselenie`.`id` AS `id`,'{1}' AS `date`,'' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `zhitie_bez`,'' AS `parkovka`, 'Безналичность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + ifnull(`rasselenie`.`bron_bez`,0))) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie_bez` = `zhitie`.`nazvanie`))) WHERE `date` >= '{0}' and `date` <= '{1}' ORDER BY `date`", DateTime.Parse(dateTimePicker2.Text).Year + "-" + DateTime.Parse(dateTimePicker2.Text).Month + "-" + DateTime.Parse(dateTimePicker2.Text).Day, DateTime.Parse(dateTimePicker3.Text).Year + "-" + DateTime.Parse(dateTimePicker3.Text).Month + "-" + DateTime.Parse(dateTimePicker3.Text).Day);
+                //string sql = String.Format("select `rasselenie`.`id` AS `id`,cast(`rasselenie`.`date` as char charset utf8) AS `date`,`rasselenie`.`N_kvit` AS `N_kvit`,`rasselenie`.`FiO` AS `FIO`,`rasselenie`.`City` AS `City`,`rasselenie`.`Kol_dney` AS `Kol_dney`,`rasselenie`.`Kol_czel` AS `Kol_czel`,`rasselenie`.`zhitie` AS `zhitie`,'' AS `zhitie_bez`,`rasselenie`.`parkovka` AS `parkovka`,`rasselenie`.`zakazczik` AS `Zakazczik`,`rasselenie`.`bron` AS `bron`,'' AS `bron_bez`,((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `date` >= '{0}' and `date` <= '{1}' union all select `rasselenie`.`id` AS `id`,cast(`rasselenie`.`date` as char charset utf8) AS `date`,`rasselenie`.`N_kvit` AS `N_kvit`,`rasselenie`.`FiO` AS `FIO`,`rasselenie`.`City` AS `City`,`rasselenie`.`Kol_dney` AS `Kol_dney`,`rasselenie`.`Kol_czel` AS `Kol_czel`,'' AS `zhitie`,`rasselenie`.`zhitie_bez` AS `zhitie_bez`,'' AS `parkovka`,`rasselenie`.`zakazczik` AS `Zakazczik`,'' AS `bron`,`rasselenie`.`bron_bez` AS `bron_bez`,(((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + ifnull(`rasselenie`.`bron_bez`,0)) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie_bez` = `zhitie`.`nazvanie`))) WHERE `date` >= '{0}' and `date` <= '{1}' union all select `rasselenie`.`id` AS `id`, '{1}' AS `date`,'' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `zhitie_bez`,'' AS `parkovka`,'Итого наличность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum(((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`)) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `date` >= '{0}' and `date` <= '{1}' union all select `rasselenie`.`id` AS `id`,'{1}' AS `date`,'' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `zhitie_bez`,'' AS `parkovka`, 'Безналичность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + ifnull(`rasselenie`.`bron_bez`,0))) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie_bez` = `zhitie`.`nazvanie`))) WHERE `date` >= '{0}' and `date` <= '{1}' ORDER BY `date`", DateTime.Parse(dateTimePicker2.Text).Year + "-" + DateTime.Parse(dateTimePicker2.Text).Month + "-" + DateTime.Parse(dateTimePicker2.Text).Day, DateTime.Parse(dateTimePicker3.Text).Year + "-" + DateTime.Parse(dateTimePicker3.Text).Month + "-" + DateTime.Parse(dateTimePicker3.Text).Day);
+
+                string sql = String.Format("select `rasselenie`.`id` AS `id`,cast(`rasselenie`.`date` as char charset utf8) AS `date`,`rasselenie`.`N_kvit` AS `N_kvit`,`rasselenie`.`FiO` AS `FIO`,`rasselenie`.`City` AS `City`,`rasselenie`.`Kol_dney` AS `Kol_dney`,`rasselenie`.`Kol_czel` AS `Kol_czel`,`rasselenie`.`zhitie` AS `zhitie`,`rasselenie`.`parkovka` AS `parkovka`,`rasselenie`.`zakazczik` AS `Zakazczik`,`rasselenie`.`bron` AS `bron`,`rasselenie`.`bron_bez` AS `bron_bez`,(((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`) + ifnull(`rasselenie`.`bron_bez`,0)) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `date` >= '{0}' and `date` <= '{1}' union all select `rasselenie`.`id` AS `id`, '{1}' AS `date`,'' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `parkovka`,'Итого наличность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum(((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`)) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `date` >= '{0}' and `date` <= '{1}' union all select `rasselenie`.`id` AS `id`,'{1}' AS `date`,'' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `parkovka`, 'Безналичность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum(ifnull(`rasselenie`.`bron_bez`,0)) AS `cena` from `rasselenie` WHERE `date` >= '{0}' and `date` <= '{1}' ORDER BY `date`", DateTime.Parse(dateTimePicker2.Text).Year + "-" + DateTime.Parse(dateTimePicker2.Text).Month + "-" + DateTime.Parse(dateTimePicker2.Text).Day, DateTime.Parse(dateTimePicker3.Text).Year + "-" + DateTime.Parse(dateTimePicker3.Text).Month + "-" + DateTime.Parse(dateTimePicker3.Text).Day);
+               
                 MySqlDataAdapter myAdapter = new MySqlDataAdapter();
                 myAdapter.SelectCommand = new MySqlCommand(sql, conn);
                 DataSet dataSet = new DataSet();
@@ -559,8 +566,8 @@ namespace Ark
                     t.Kol_czel = dataRow["Kol_czel"].ToString().Trim();
                     item1.SubItems.Add(dataRow["zhitie"].ToString().Trim());
                     t.zhitie = dataRow["zhitie"].ToString().Trim();
-                    item1.SubItems.Add(dataRow["zhitie_bez"].ToString().Trim());
-                    t.zhitie_bez = dataRow["zhitie_bez"].ToString().Trim();
+                    //item1.SubItems.Add(dataRow["zhitie_bez"].ToString().Trim());
+                    //t.zhitie_bez = dataRow["zhitie_bez"].ToString().Trim();
                     item1.SubItems.Add(dataRow["parkovka"].ToString().Trim());
                     t.parkovka = dataRow["parkovka"].ToString().Trim();
                     item1.SubItems.Add(dataRow["bron"].ToString().Trim());
@@ -663,7 +670,8 @@ namespace Ark
                 mainWin.m_dbConnector.Lock();
                 MySqlConnection conn = mainWin.m_dbConnector.getMySqlConnection();
 
-                string sql = String.Format("select `rasselenie`.`id` AS `id`,cast(`rasselenie`.`date` as char charset utf8) AS `date`,`rasselenie`.`N_kvit` AS `N_kvit`,`rasselenie`.`FiO` AS `FIO`,`rasselenie`.`City` AS `City`,`rasselenie`.`Kol_dney` AS `Kol_dney`,`rasselenie`.`Kol_czel` AS `Kol_czel`,`rasselenie`.`zhitie` AS `zhitie`,'' AS `zhitie_bez`,`rasselenie`.`parkovka` AS `parkovka`,`rasselenie`.`zakazczik` AS `Zakazczik`,`rasselenie`.`bron` AS `bron`,'' AS `bron_bez`,((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `N_kvit` >= '{0}' and `N_kvit` <= '{1}' union all select `rasselenie`.`id` AS `id`,cast(`rasselenie`.`date` as char charset utf8) AS `date`,`rasselenie`.`N_kvit` AS `N_kvit`,`rasselenie`.`FiO` AS `FIO`,`rasselenie`.`City` AS `City`,`rasselenie`.`Kol_dney` AS `Kol_dney`,`rasselenie`.`Kol_czel` AS `Kol_czel`,'' AS `zhitie`,`rasselenie`.`zhitie_bez` AS `zhitie_bez`,'' AS `parkovka`,`rasselenie`.`zakazczik` AS `Zakazczik`,'' AS `bron`,`rasselenie`.`bron_bez` AS `bron_bez`,(((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + ifnull(`rasselenie`.`bron_bez`,0)) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie_bez` = `zhitie`.`nazvanie`))) WHERE `N_kvit` >= '{0}' and `N_kvit` <= '{1}' union all select `rasselenie`.`id` AS `id`, '' AS `date`,'{1}' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `zhitie_bez`,'' AS `parkovka`,'Итого наличность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum(((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`)) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `N_kvit` >= '{0}' and `N_kvit` <= '{1}' union all select `rasselenie`.`id` AS `id`,'' AS `date`,'{1}' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `zhitie_bez`,'' AS `parkovka`, 'Безналичность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + ifnull(`rasselenie`.`bron_bez`,0))) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie_bez` = `zhitie`.`nazvanie`))) WHERE `N_kvit` >= '{0}' and `N_kvit` <= '{1}' ORDER BY `N_kvit`", textBoxKvN.Text, textBoxKvK.Text);
+                //string sql = String.Format("select `rasselenie`.`id` AS `id`,cast(`rasselenie`.`date` as char charset utf8) AS `date`,`rasselenie`.`N_kvit` AS `N_kvit`,`rasselenie`.`FiO` AS `FIO`,`rasselenie`.`City` AS `City`,`rasselenie`.`Kol_dney` AS `Kol_dney`,`rasselenie`.`Kol_czel` AS `Kol_czel`,`rasselenie`.`zhitie` AS `zhitie`,'' AS `zhitie_bez`,`rasselenie`.`parkovka` AS `parkovka`,`rasselenie`.`zakazczik` AS `Zakazczik`,`rasselenie`.`bron` AS `bron`,'' AS `bron_bez`,((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `N_kvit` >= '{0}' and `N_kvit` <= '{1}' union all select `rasselenie`.`id` AS `id`,cast(`rasselenie`.`date` as char charset utf8) AS `date`,`rasselenie`.`N_kvit` AS `N_kvit`,`rasselenie`.`FiO` AS `FIO`,`rasselenie`.`City` AS `City`,`rasselenie`.`Kol_dney` AS `Kol_dney`,`rasselenie`.`Kol_czel` AS `Kol_czel`,'' AS `zhitie`,`rasselenie`.`zhitie_bez` AS `zhitie_bez`,'' AS `parkovka`,`rasselenie`.`zakazczik` AS `Zakazczik`,'' AS `bron`,`rasselenie`.`bron_bez` AS `bron_bez`,(((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + ifnull(`rasselenie`.`bron_bez`,0)) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie_bez` = `zhitie`.`nazvanie`))) WHERE `N_kvit` >= '{0}' and `N_kvit` <= '{1}' union all select `rasselenie`.`id` AS `id`, '' AS `date`,'{1}' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `zhitie_bez`,'' AS `parkovka`,'Итого наличность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum(((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`)) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `N_kvit` >= '{0}' and `N_kvit` <= '{1}' union all select `rasselenie`.`id` AS `id`,'' AS `date`,'{1}' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `zhitie_bez`,'' AS `parkovka`, 'Безналичность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + ifnull(`rasselenie`.`bron_bez`,0))) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie_bez` = `zhitie`.`nazvanie`))) WHERE `N_kvit` >= '{0}' and `N_kvit` <= '{1}' ORDER BY `N_kvit`", textBoxKvN.Text, textBoxKvK.Text);
+                string sql = String.Format("select `rasselenie`.`id` AS `id`,cast(`rasselenie`.`date` as char charset utf8) AS `date`,`rasselenie`.`N_kvit` AS `N_kvit`,`rasselenie`.`FiO` AS `FIO`,`rasselenie`.`City` AS `City`,`rasselenie`.`Kol_dney` AS `Kol_dney`,`rasselenie`.`Kol_czel` AS `Kol_czel`,`rasselenie`.`zhitie` AS `zhitie`,`rasselenie`.`parkovka` AS `parkovka`,`rasselenie`.`zakazczik` AS `Zakazczik`,`rasselenie`.`bron` AS `bron`,`rasselenie`.`bron_bez` AS `bron_bez`,((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `N_kvit` >= '{0}' and `N_kvit` <= '{1}' union all select `rasselenie`.`id` AS `id`, '' AS `date`,'{1}' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `parkovka`,'Итого наличность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum(((((`rasselenie`.`Kol_czel` * `zhitie`.`cena`) * `rasselenie`.`Kol_dney`) + `rasselenie`.`parkovka`) + `rasselenie`.`bron`)) AS `cena` from (`rasselenie` join `zhitie` on((`rasselenie`.`zhitie` = `zhitie`.`nazvanie`))) WHERE `N_kvit` >= '{0}' and `N_kvit` <= '{1}' union all select `rasselenie`.`id` AS `id`,'' AS `date`,'{1}' AS `N_kvit`,'' AS `FIO`,'' AS `City`,'' AS `Kol_dney`,'' AS `Kol_czel`,'' AS `zhitie`,'' AS `parkovka`, 'Безналичность:' AS `Zakazczik`,'' AS `bron`,'' AS `bron_bez`,sum(ifnull(`rasselenie`.`bron_bez`,0)) AS `cena` from `rasselenie` WHERE `N_kvit` >= '{0}' and `N_kvit` <= '{1}' ORDER BY `N_kvit`", textBoxKvN.Text, textBoxKvK.Text);
                 MySqlDataAdapter myAdapter = new MySqlDataAdapter();
                 myAdapter.SelectCommand = new MySqlCommand(sql, conn);
                 DataSet dataSet = new DataSet();
@@ -692,8 +700,6 @@ namespace Ark
                     t.Kol_czel = dataRow["Kol_czel"].ToString().Trim();
                     item1.SubItems.Add(dataRow["zhitie"].ToString().Trim());
                     t.zhitie = dataRow["zhitie"].ToString().Trim();
-                    item1.SubItems.Add(dataRow["zhitie_bez"].ToString().Trim());
-                    t.zhitie_bez = dataRow["zhitie_bez"].ToString().Trim();
                     item1.SubItems.Add(dataRow["parkovka"].ToString().Trim());
                     t.parkovka = dataRow["parkovka"].ToString().Trim();
                     item1.SubItems.Add(dataRow["bron"].ToString().Trim());
@@ -834,12 +840,11 @@ namespace Ark
             excelApp.Cells[1, 6 ]= "Кол-во дней";
             excelApp.Cells[1, 7] = "Кол-во человек";
             excelApp.Cells[1, 8] = "Житие";
-            excelApp.Cells[1, 9] = "Житие (б/н)";
-            excelApp.Cells[1, 10] = "Парковка";
-            excelApp.Cells[1, 11] = "Бронь";
-            excelApp.Cells[1, 12] = "Бронь (б/н)";
-            excelApp.Cells[1, 13] = "Заказчик";
-            excelApp.Cells[1, 14] = "Сумма";
+            excelApp.Cells[1, 9] = "Парковка";
+            excelApp.Cells[1, 10] = "Бронь";
+            excelApp.Cells[1, 11] = "Безнал";
+            excelApp.Cells[1, 12] = "Заказчик";
+            excelApp.Cells[1, 13] = "Сумма";
             
             int i = 1;
             int i2 = 4;

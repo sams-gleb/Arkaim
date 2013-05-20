@@ -31,6 +31,12 @@ namespace Ark
             this.label1 = new System.Windows.Forms.Label();
             this.buttonNew = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxKvN = new System.Windows.Forms.TextBox();
+            this.buttonKvit = new System.Windows.Forms.Button();
+            this.textBoxKvK = new System.Windows.Forms.TextBox();
             this.buttonExcel = new System.Windows.Forms.Button();
             this.comboBoxZakazczik = new System.Windows.Forms.ComboBox();
             this.buttonCopy = new System.Windows.Forms.Button();
@@ -62,12 +68,8 @@ namespace Ark
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonApply = new System.Windows.Forms.Button();
             this.listViewRasselenie = new System.Windows.Forms.ListView();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBoxKvN = new System.Windows.Forms.TextBox();
-            this.buttonKvit = new System.Windows.Forms.Button();
-            this.textBoxKvK = new System.Windows.Forms.TextBox();
+            this.textBoxBez = new System.Windows.Forms.TextBox();
+            this.labelBez = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -96,6 +98,8 @@ namespace Ark
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.labelBez);
+            this.groupBox1.Controls.Add(this.textBoxBez);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.buttonExcel);
             this.groupBox1.Controls.Add(this.comboBoxZakazczik);
@@ -136,6 +140,62 @@ namespace Ark
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Параметры";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.textBoxKvN);
+            this.groupBox3.Controls.Add(this.buttonKvit);
+            this.groupBox3.Controls.Add(this.textBoxKvK);
+            this.groupBox3.Location = new System.Drawing.Point(6, 106);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 100);
+            this.groupBox3.TabIndex = 36;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "По квитанциям";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 47);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(62, 13);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "Номер кон";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 22);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 13);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Номер нач";
+            // 
+            // textBoxKvN
+            // 
+            this.textBoxKvN.Location = new System.Drawing.Point(73, 19);
+            this.textBoxKvN.Name = "textBoxKvN";
+            this.textBoxKvN.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKvN.TabIndex = 13;
+            // 
+            // buttonKvit
+            // 
+            this.buttonKvit.Location = new System.Drawing.Point(73, 70);
+            this.buttonKvit.Name = "buttonKvit";
+            this.buttonKvit.Size = new System.Drawing.Size(100, 23);
+            this.buttonKvit.TabIndex = 15;
+            this.buttonKvit.Text = "По квитанциям";
+            this.buttonKvit.UseVisualStyleBackColor = true;
+            this.buttonKvit.Click += new System.EventHandler(this.buttonKvit_Click);
+            // 
+            // textBoxKvK
+            // 
+            this.textBoxKvK.Location = new System.Drawing.Point(73, 44);
+            this.textBoxKvK.Name = "textBoxKvK";
+            this.textBoxKvK.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKvK.TabIndex = 14;
+            // 
             // buttonExcel
             // 
             this.buttonExcel.Location = new System.Drawing.Point(878, 13);
@@ -174,7 +234,7 @@ namespace Ark
             // checkBoxBron
             // 
             this.checkBoxBron.AutoSize = true;
-            this.checkBoxBron.Location = new System.Drawing.Point(744, 139);
+            this.checkBoxBron.Location = new System.Drawing.Point(744, 176);
             this.checkBoxBron.Name = "checkBoxBron";
             this.checkBoxBron.Size = new System.Drawing.Size(63, 17);
             this.checkBoxBron.TabIndex = 30;
@@ -414,61 +474,21 @@ namespace Ark
             this.listViewRasselenie.View = System.Windows.Forms.View.Details;
             this.listViewRasselenie.SelectedIndexChanged += new System.EventHandler(this.listViewRasselenie_SelectedIndexChanged);
             // 
-            // groupBox3
+            // textBoxBez
             // 
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.textBoxKvN);
-            this.groupBox3.Controls.Add(this.buttonKvit);
-            this.groupBox3.Controls.Add(this.textBoxKvK);
-            this.groupBox3.Location = new System.Drawing.Point(6, 106);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 100);
-            this.groupBox3.TabIndex = 36;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "По квитанциям";
+            this.textBoxBez.Location = new System.Drawing.Point(744, 146);
+            this.textBoxBez.Name = "textBoxBez";
+            this.textBoxBez.Size = new System.Drawing.Size(108, 20);
+            this.textBoxBez.TabIndex = 37;
             // 
-            // label11
+            // labelBez
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 47);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 13);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "Номер кон";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 22);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 13);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "Номер нач";
-            // 
-            // textBoxKvN
-            // 
-            this.textBoxKvN.Location = new System.Drawing.Point(73, 19);
-            this.textBoxKvN.Name = "textBoxKvN";
-            this.textBoxKvN.Size = new System.Drawing.Size(100, 20);
-            this.textBoxKvN.TabIndex = 13;
-            // 
-            // buttonKvit
-            // 
-            this.buttonKvit.Location = new System.Drawing.Point(73, 70);
-            this.buttonKvit.Name = "buttonKvit";
-            this.buttonKvit.Size = new System.Drawing.Size(100, 23);
-            this.buttonKvit.TabIndex = 15;
-            this.buttonKvit.Text = "По квитанциям";
-            this.buttonKvit.UseVisualStyleBackColor = true;
-            this.buttonKvit.Click += new System.EventHandler(this.buttonKvit_Click);
-            // 
-            // textBoxKvK
-            // 
-            this.textBoxKvK.Location = new System.Drawing.Point(73, 44);
-            this.textBoxKvK.Name = "textBoxKvK";
-            this.textBoxKvK.Size = new System.Drawing.Size(100, 20);
-            this.textBoxKvK.TabIndex = 14;
+            this.labelBez.AutoSize = true;
+            this.labelBez.Location = new System.Drawing.Point(694, 149);
+            this.labelBez.Name = "labelBez";
+            this.labelBez.Size = new System.Drawing.Size(44, 13);
+            this.labelBez.TabIndex = 38;
+            this.labelBez.Text = "Безнал";
             // 
             // FormRasselenie
             // 
@@ -531,5 +551,7 @@ namespace Ark
         private System.Windows.Forms.TextBox textBoxKvN;
         private System.Windows.Forms.Button buttonKvit;
         private System.Windows.Forms.TextBox textBoxKvK;
+        private System.Windows.Forms.Label labelBez;
+        private System.Windows.Forms.TextBox textBoxBez;
     }
 }
